@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@100;200;300;400;500;600;700&display=swap');
+
+
+body {
+    margin: 0;
+    height: 80vh;
+    padding: 0;
+    text-align: center;
+    font-family: 'Eagle Lake', handwriting;
+    background: url(./img/todd-kent-jqXiBG2VDeA-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+h1{
+    margin: 70px auto;
+    max-width: 600px;
+    position: relative;
+}
+h1::before{
+    content: "";
+    width: 150px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    display: block;
+}
+h1::after{
+    content: "";
+    width: 150px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    display: block;
+}
+
+
+   
+
+
+/*container*/
+
+.container{
+    height: 70vh;
+    width: 70%;
+    margin: auto;
+    font-family: 'Inika', serif;
+    background-color: ed;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.card1{
+    margin: 50px 20px;
+    height: 320px;
+    width: 220px;
+    padding: 20px 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(0, 0, 0, 0.25);
+}
+img{
+    height: 70px;
+    transform: translateY(-60px);
+}
+h2{
+    transform: translateY(-65px);
+    position: relative;
+    z-index: -2 ;
+}
+h3{
+    color: #fff;
+    font-size: 20px;
+    transform: translateY(-50px);
+}
+h4{
+    color: #b1b0b0;
+    font-size: 15px;
+    transform: translateY(-46px);
+}
+h5{
+    color: #dadada;
+    font-size: 18px;
+    transform: translateY(-60px);
+    background-color: black;
+}
+
+
+.card2{
+    margin: 50px 20px;
+    height: 320px;
+    width: 220px;
+    padding: 20px 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(0, 0, 0, 0.25);
+    align-self: center;
+}
+
+
+
+.card3{
+    margin: 50px 20px;
+    height: 320px;
+    width: 220px;
+    padding: 20px 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.card4{
+    margin: 50px 20px;
+    height: 320px;
+    width: 220px;
+    padding: 20px 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(0, 0, 0, 0.25);
+    align-self: center;
+}
+
+
+
+@media (max-width: 1485px){
+    body{
+        min-height: 150vh;
+        text-align: center;
+        background: url(./img/beach1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 743px){
+    body{
+        height: 220vh;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+@media (max-width: 535px){
+    body{
+        height: 250vh;
+    }
+    #span{
+        background-color:  rgb(184, 181, 181);
+        position: relative;
+        z-index: 2;
+    }
+}
