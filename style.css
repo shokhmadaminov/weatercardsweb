@@ -16,7 +16,7 @@ body {
 }
 
 h1{
-    margin: 70px auto;
+    margin: 30px auto;
     max-width: 600px;
     position: relative;
 }
@@ -52,7 +52,6 @@ h1::after{
     width: 70%;
     margin: auto;
     font-family: 'Inika', serif;
-    background-color: ed;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -136,11 +135,14 @@ h5{
 
 
 
+
+
+
 @media (max-width: 1485px){
     body{
-        min-height: 150vh;
-        text-align: center;
-        background: url(./img/beach1.jpg);
+        background: url(./img/todd-kent-jqXiBG2VDeA-unsplash.jpg);
+        height: 100vh;
+        background-attachment: fixed;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -150,7 +152,7 @@ h5{
 
 @media (max-width: 743px){
     body{
-        height: 220vh;
+        height: 100vh;
     }
     .container{
         display: flex;
@@ -161,11 +163,24 @@ h5{
 
 @media (max-width: 535px){
     body{
-        height: 250vh;
+        height: 100vh;
     }
-    #span{
-        background-color:  rgb(184, 181, 181);
-        position: relative;
-        z-index: 2;
+    h1::before{
+        content: "";
+        width: 150px;
+        height: 3px;
+        background: black;
+        position: absolute;
+
+        top: 5%;
+        display: block;
+    }
+    h1::after{
+        content: "";
+        width: 150px;
+        height: 3px;
+        background: black;
+        top: 95%;
+        display: block;
     }
 }
